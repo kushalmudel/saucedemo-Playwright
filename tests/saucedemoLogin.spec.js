@@ -36,6 +36,7 @@ test.describe("Login tests", () => {
     //verify the error message text
     const expectedErrorMsg = "Epic sadface: Username is required";
     await expect(errorMsg).toHaveText(expectedErrorMsg);
+    console.log("login failed");
   });
 
   test("Test case 3 Failure: Valid username invalid password", async ({
