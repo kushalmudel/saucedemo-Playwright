@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 //grouping all login related tests
 test.describe("Login tests", () => {
-  //this will run before each test cases
+  //this function will run before each test cases
   test.beforeEach(async ({ page }) => {
     //navigate to the login page and verifying page title
     await page.goto("https://www.saucedemo.com/");
